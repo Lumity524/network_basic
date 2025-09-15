@@ -7,8 +7,8 @@ increaseBtn.addEventListener('click', () => {
     count++;
     numberDiv.textContent = count;
 });
-
-sendBtn.addEventListener('click', () => {
-    alert('현재 숫자: ' + count + ' 전송!');
-});
-
+sendBtn.addEventListener("click", function() {
+    location.href='http://10.150.1.51:5000/save'+n
+    n = 0;
+    num.innerHTML = n;
+})

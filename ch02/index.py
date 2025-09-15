@@ -8,3 +8,11 @@ def home():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0")
+    
+session=[]
+
+@app.route("/save/<num>")
+def up(num):
+    session.append(num)
+    print(session)
+    return render_template("index.html")
